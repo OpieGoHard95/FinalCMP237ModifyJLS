@@ -1,8 +1,14 @@
-<button>Click me</button>
-<p>No handler here.</p>
+<button id = "left">Click me</button>
+<button id = "middle"> Don't click me</button>
+<button id = "right">Click me</button>
+<p>Follow the buttons</p>
 <script>
-  var button = document.querySelector("button");
+  var button = document.getElementById("left");
   button.addEventListener("click", function() {
     console.log("Button clicked.");
+  });
+  var button3 = document.getElementById("right");
+  button2.addEventListener("click", function() {
+    console.log("This Button was also clicked.");
   });
 </script>
